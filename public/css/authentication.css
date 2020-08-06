@@ -1,0 +1,133 @@
+html {
+  font-size:62.5%;
+}
+
+body {
+  margin:0;
+  font-family:'Poppins', sans-serif;
+  font-size:1.6rem;
+  color:#333;
+  background-color:#f6f8fA;
+}
+
+input[type=text], input[type=number], input[type=email], input[type=password], button, textarea { outline:0; }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  display:table-cell;
+  vertical-align:center;
+  width: 32rem;
+  background-color:#fff;
+  padding:4.2rem 2.4rem 4.2rem 2.4rem;
+  border:1px solid #eee;
+  border-radius:5px;
+  box-sizing:border-box;
+  box-shadow:0 5px 25px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper a:hover {
+  text-decoration:underline;
+}
+
+.wrapper > h2 {
+  font-family:'Montserrat Alternates', sans-serif;
+  text-align:center;
+  margin-top:0;
+  margin-bottom:3.2rem;
+  color:#2980b9;
+}
+
+.btn-primary {
+  background-color:#2980b9;
+  color:#fff;
+  font-family:inherit;
+  width:100%;
+  font-size:1.6rem;
+  padding:.8rem;
+  border:1px solid #2980b9;
+  border-radius:5px;
+  cursor:pointer;
+  transition:all .5s;
+}
+
+.btn-primary:hover {
+  background-color:#3498db;
+  border:1px solid #3498db;
+}
+
+.form-control input {
+  color:#333;
+  font-size:1.7rem;
+  display:block;
+  width:100%;
+  padding:.8rem 1.6rem;
+  margin-bottom:1.8rem;
+  border:1px solid #ddd;
+  border-radius:5px;
+  box-sizing:border-box;
+  transition:all .3s;
+  text-align:center;
+  font-weight:bold;
+  font-family:'Poppins', sans-serif;
+}
+
+.form-control input:focus {
+  border:1px solid #2980b9;
+}
+
+.security-disc {
+  -webkit-text-security: disc;
+}
+
+.alert {
+  margin-bottom:1.2rem;
+  padding:.8rem 1.2rem;
+  border-radius:5px;
+}
+
+.alert > p {
+  margin:0;
+}
+
+.alert-danger {
+  background-color:#ffcccc;
+  border:1px solid #fab1a0;
+}
+
+.alert-danger > p {
+  color:#b33939;
+}
+
+.alert-danger > p:before {
+  font-family:'themify';
+  content: "\e6c5";
+  margin-right:.8rem;
+}
+
+@media only screen and (max-width:420px) {
+  body {
+    background-color:white;
+  }
+
+  .container {
+    padding:0 2.4rem;
+  }
+
+  .wrapper {
+    width:100%;
+    box-shadow:none;
+    border:0;
+  }
+}
